@@ -1,0 +1,141 @@
+.popover {
+  max-width: none;
+}
+
+/*.popover-style-1 {
+
+  min-width: 178px;
+  border-radius: 11px;
+  background-color: #ffffff;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.18);
+
+  .popover-content  {
+    padding-left: 22px;
+    padding-bottom: 26px;
+    padding-right: 8px;
+    padding-top: 11px;
+
+
+    font-family: WorkSan_Medium;
+    font-size: 9px;
+    font-weight: 500;
+    text-align: left;
+    color: #828282;
+
+    .bagde {
+      margin-bottom: 10px;
+      font-family: WorkSan_Bold;
+      font-size: 9px;
+      font-weight: bold;
+      text-align: center;
+      color: #ffffff;
+      padding-top: 4px;
+      padding-bottom: 4px;
+      padding-right: 9px;
+      padding-left: 9px;
+      border-radius: 9.3px;
+      background-color: #e24660;
+      min-width: 68px;
+      display: inline-block;
+    }
+
+    h1 {
+      font-family: WorkSan_Bold;
+      font-size: 13px;
+      font-weight: bold;
+      text-align: left;
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.popover-style-2 {
+
+  @extend .popover-style-1;
+  max-width: 240px;
+}
+
+.popover-style-1.bottom {
+  margin-top: 15px;
+}*/
+
+.popover-content {
+  padding: 32px;
+  border-radius: 11px;
+  background-color: #ffffff;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.18);
+}
+
+.action-popover {
+
+  width: 340px;
+
+  .action-popover-header {
+
+    margin-bottom: 32px;
+    display:flex;
+    align-items: center;
+
+    button {
+      margin-right: 18px;
+      margin-left: 0px;
+    }
+
+    h2 {
+      font-family: Baloo_Regular;
+      font-size: 25px;
+      text-align: left;
+      margin: 0;
+    }
+  }
+
+  .action-popover-list {
+
+    height: 130px;
+    overflow: auto;
+    padding-right: 20px;
+
+    .action-popover-item:last-child {
+      border-bottom: solid 1px #d4d4d4;
+    }
+
+    .action-popover-item {
+
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+
+      padding-top: 12px;
+      padding-bottom: 18px;
+      margin-bottom: 20px;
+
+      border-top: solid 1px #d4d4d4;
+
+      font-family: WorkSan_Medium;
+      font-size: 12px;
+      font-weight: 500;
+
+      .title {
+        font-family: WorkSan_Bold;
+        font-size: 15px;
+        font-weight: bold;
+        text-align: left;
+      }
+    }
+  }
+}
+
+//Link to popover
+.tenant-popover {
+  cursor: pointer;
+}
+
+.chartspayoutmodal-popover {
+
+  .popover-content {
+    width: 180px;
+    text-align: center;
+    padding: 10px 30px;
+  }
+}

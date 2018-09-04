@@ -1,0 +1,31 @@
+<div class="guest guest-yellow">
+    <div id="carousel-upcoming-guest" class="carousel-current-guest carousel slide" data-ride="carousel">
+
+        <div class="carousel-inner" role="listbox">
+            <div ng-repeat="booking in property.bookings track by $index" ng-class="($index == 0) ? 'item active' : 'item'">
+                <div style="display:flex">
+                    <div class="col-xs-offset-2 col-xs-4 padding-right-0">
+                        <p class="guest-title">Upcoming Guest</p>
+                        <p class="guest-name">{{booking.guestFirstName}} {{booking.guestLastName}}</p>
+                        <p class="guest-address">{{booking.property.address1}}<br/>{{booking.property.city}}, {{booking.property.zipCode}}</p>
+                    </div>
+                    <div class="col-xs-4 padding-right-0">
+                        <ul class="guest-list">
+                            <li><img src="img/icons/checkout-icon.svg" class="icon"/>Check-in {{booking.checkinDate}}</li>
+                            <li><img src="img/icons/guest-icon.svg" class="icon"/>{{property.adultCount + property.childrenCount}} Guests</li>
+                            <li><img src="img/icons/price-icon.svg" class="icon"/>$111 Expected</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-upcoming-guest" role="button" data-slide="prev">
+            <img class="carousel-control-img" src="img/icons/carousel-left.svg" />
+        </a>
+        <a class="right carousel-control" href="#carousel-upcoming-guest" role="button" data-slide="next">
+            <img class="carousel-control-img" src="img/icons/carousel-right.svg" />
+        </a>
+    </div>
+</div>

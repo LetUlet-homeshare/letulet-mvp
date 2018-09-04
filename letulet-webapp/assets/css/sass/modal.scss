@@ -1,0 +1,84 @@
+.modal {
+
+  font-family: WorkSan_Regular;
+  font-size: 15px;
+  color: #454545;
+
+
+  .modal-content {
+    padding: 60px;
+  }
+
+  .modal-logo {
+
+  }
+
+  .modal-title {
+    margin-top: 15px;
+    margin-bottom: 0px;
+    font-family: Baloo_Regular;
+    font-size: 40px;
+    color: #454545;
+  }
+
+  .modal-description {
+    margin-bottom: 30px;
+  }
+}
+
+.modal-confirmation {
+  @media (min-width: 768px) {
+    .modal-dialog {
+      width: 640px;
+      margin: 30px auto;
+    }
+  }
+
+  .modal-content {
+    padding: 30px 100px;
+  }
+
+  .modal-title {
+    margin-top: 0;
+  }
+
+  .modal-description {
+    margin-bottom: 40px;
+  }
+}
+
+.modal-agreement {
+  @media (min-width: 768px) {
+    .modal-dialog {
+    }
+  }
+
+  .modal-content {
+    padding: 30px 100px;
+  }
+
+  .modal-title {
+    margin-top: 0;
+  }
+
+  .modal-description {
+    margin-bottom: 40px;
+  }
+}
+
+.modal-video {
+
+  .modal-dialog {
+    width: 800px;
+
+    .modal-content {
+      border: 0;
+      padding: 0;
+
+      .modal-body {
+        padding: 0;
+        display: grid;
+      }
+    }
+  }
+}

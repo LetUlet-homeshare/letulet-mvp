@@ -1,0 +1,376 @@
+$LLGscreen: 1280px;
+$LGscreen: 1024px;
+$MDscreen: 767px;
+$SMscreen: 640px;
+$XSscreen: 120px;
+
+@import 'font';
+@import 'effects';
+
+$imgpath : "../../img/";
+
+body, html {
+  height: 100%;
+}
+
+.splash {
+  color: #ffffff;
+
+  height: 100%;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url($imgpath + "splash-screen-xs.png");
+
+  .container {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logo {
+    position: absolute;
+  }
+
+  .splash-container {
+
+    padding-top: 70px;
+
+    flex: 1 0 auto;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    .splash-title {
+      font-size: 30px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.0;
+      letter-spacing: normal;
+      text-align: center;
+      color: #ffffff;
+      margin-top: 0;
+    }
+
+    .splash-subtitle,
+    .splash-message{
+      font-family: WorkSan_Regular;
+      color: #ffffff;
+    }
+
+    form {
+
+      input {
+        opacity: 0.9;
+        border-radius: 100px;
+        background-color: #ffffff;
+      }
+
+      .form-control {
+        font-family: WorkSan_Regular;
+        color: #585858;
+        display: block;
+      }
+
+      button,
+      button:focus,
+      button:hover {
+        font-family: Baloo_Regular;
+        opacity: 0.9;
+        border-radius: 100px;
+        background-color: #f42b52;
+        border: 0;
+        color: white;
+        text-shadow: none;
+        background-image: none;
+      }
+    }
+  }
+
+  .splash-footer-container {
+
+    flex: 0 1 auto;
+    padding-bottom: 45px;
+
+    .footer {
+
+      .footer-logo {
+        width: 96px;
+        margin-bottom: 10px;
+      }
+
+      p {
+        margin: 0;
+        font-family: WorkSan_Regular;
+        font-size: 12px;
+        line-height: 1.67;
+        text-align: center;
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+@media (min-width:$XSscreen){
+  .splash {
+    background-image: url($imgpath + "splash-screen-xs.png");
+    
+    .logo {
+      display: none;
+    }
+
+    .splash-container {
+
+      .splash-title {
+        font-family: Baloo_Regular;
+        margin-bottom: 6px;
+      }
+
+      .splash-subtitle,
+      .splash-message{
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 1.13;
+        margin-bottom: 23px;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      form {
+
+        .form-control {
+          width: 100%;
+          height: 30px;
+          padding: 5px 20px;
+          font-size: 11px;
+          line-height: 1.82;
+        }
+
+        button {
+          padding: 8px 25px;
+          font-size: 13px;
+          line-height: 13px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width:$SMscreen){
+  .splash {
+    background-image: url($imgpath + "splash-screen-sm.png");
+
+    .logo {
+      left: 95px;
+      top: 70px;
+      display: block;
+    }
+
+    .splash-container {
+      padding-top: 130px;
+
+      .splash-title {
+        font-family: Baloo_Regular;
+        font-size: 70px;
+        margin-bottom: 16px;
+      }
+
+      .splash-subtitle,
+      .splash-message {
+        font-size: 25px;
+        font-weight: 500;
+        line-height: 1.16;
+      }
+
+      .splash-message {
+        width: 100%;
+        height: 100px;
+        margin-bottom: 16px;
+      }
+
+      form {
+
+        .form-control {
+          margin-right: 16px;
+          width: 380px;
+          height: 40px;
+          display: block;
+          padding: 9px 25px;
+          font-size: 13px;
+          line-height: 1.54;
+          margin: 0 auto;
+        }
+
+        button {
+          padding: 13px 35px;
+          line-height: 1;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+
+@media (min-width:$MDscreen){
+  .splash {
+    background-image: url($imgpath + "splash-screen-md.png");
+
+    .logo {
+      left: 86px;
+      top: 70px;
+      display: block;
+    }
+
+    .splash-container {
+      padding-top: 130px;
+
+      .splash-title {
+        font-family: Baloo_Regular;
+        font-size: 70px;
+        margin-bottom: 16px;
+      }
+
+      .splash-subtitle,
+      .splash-message {
+        font-size: 25px;
+        font-weight: 500;
+        line-height: 1.16;
+      }
+
+      .splash-message {
+        width: 100%;
+        height: 100px;
+        margin-bottom: 16px;
+      }
+
+      form {
+
+        .form-control {
+          margin-right: 16px;
+          width: 380px;
+          height: 40px;
+          padding: 9px 25px;
+          font-size: 13px;
+          line-height: 1.54;
+        }
+
+        button {
+          padding: 13px 35px;
+          line-height: 1;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width:$LGscreen){
+  .splash {
+    background-image: url($imgpath + "splash-screen-lg.png");
+
+    .logo {
+      left: 86px;
+      top: 70px;
+      display: block;
+    }
+
+    .splash-container {
+      padding-top: 130px;
+
+      .splash-title {
+        font-family: Baloo_Regular;
+        font-size: 70px;
+        margin-bottom: 16px;
+      }
+
+      .splash-subtitle,
+      .splash-message {
+        font-size: 25px;
+        font-weight: 500;
+        line-height: 1.16;
+      }
+
+      .splash-message {
+        width: 100%;
+        height: 100px;
+        margin-bottom: 16px;
+      }
+
+      form {
+
+        .form-control {
+          margin-right: 16px;
+          width: 380px;
+          height: 40px;
+          padding: 9px 25px;
+          font-size: 13px;
+          line-height: 1.54;
+        }
+
+        button {
+          padding: 13px 35px;
+          line-height: 1;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width:$LLGscreen){
+  .splash {
+    background-image: url($imgpath + "splash-screen-llg.png");
+
+    .logo {
+      left: 86px;
+      top: 70px;
+      display: block;
+    }
+
+    .splash-container {
+      padding-top: 130px;
+
+      .splash-title {
+        font-size: 70px;
+        margin-bottom: 16px;
+      }
+
+      .splash-subtitle,
+      .splash-message {
+        font-size: 25px;
+        font-weight: 500;
+        line-height: 1.16;
+      }
+
+      .splash-message {
+        width: 100%;
+        height: 100px;
+        margin-bottom: 16px;
+      }
+
+      form {
+
+        .form-control {
+          margin-right: 16px;
+          width: 380px;
+          height: 40px;
+          padding: 9px 25px;
+          font-size: 13px;
+          line-height: 1.54;
+        }
+
+        button {
+          padding: 13px 35px;
+          line-height: 1;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

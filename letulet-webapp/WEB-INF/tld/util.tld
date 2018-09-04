@@ -1,0 +1,26 @@
+﻿<?xml version="1.0"?>
+<!DOCTYPE taglib PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.1//EN" "http://java.sun.com/j2ee/dtds/web-jsptaglibrary_1_1.dtd">
+
+<taglib>
+    <tlibversion>1.0</tlibversion>
+    <jspversion>1.1</jspversion>
+    <shortname>util</shortname>
+    <tag>
+        <name>displayMessage</name>
+        <tagclass>org.crosspollinate.utils.taglib.MessageDisplayTag</tagclass>
+        <bodycontent>JSP</bodycontent>
+        <info>This tag displays error and confirmation messages.</info>
+    </tag>
+    <tag>
+        <name>static</name>
+        <tagclass>org.crosspollinate.utils.taglib.StaticUrlTag</tagclass>
+        <bodycontent>JSP</bodycontent>
+        <info>This tag displays static URLs.</info>
+    </tag>
+    <tag>
+        <name>urlPrefix</name>
+        <tagclass>org.crosspollinate.utils.taglib.UrlPrefixTag</tagclass>
+        <bodycontent>JSP</bodycontent>
+        <info>This tag displays URL prefixes.</info>
+    </tag>
+</taglib>

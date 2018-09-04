@@ -1,0 +1,22 @@
+<div id="deletebankaccountmodal_{{bankAccount.id}}" class="modal modal-confirmation fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-xs-12 text-center">
+                        <h2 class="modal-title">ARE YOU SURE?</h2>
+                        <p class="modal-description">Deleting your bank information will stop all direct deposits to your account.</p>
+                        <div class="row">
+                            <div class="col-xs-offset-2 col-xs-8">
+                                <div class="col-xs-offset-2 col-xs-8 text-center">
+                                    <button ng-click="delete(bankAccount)" type="button" class="btn btn-fullwidth btn-lg btn-rounded btn-red" href="#">DELETE</button>
+                                    <button type="button" style="margin-top:15px" class="btn btn-fullwidth btn btn-blacklight" data-dismiss="modal">CANCEL</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

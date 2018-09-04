@@ -1,0 +1,130 @@
+<div ng-show="bankAccount.id == null || bankAccount.edit" ng-class="!bankAccount.id ? 'bank add-bank' : 'bank edit-bank'">
+    <div ng-if="!bankAccount.hideNC2State" class="bank-header">
+        <div class="bank-header-title-wrapper">
+            <span class="bank-header-title" ng-show="!bankAccount.id">Bank Not Added Yet</span>
+            <span class="bank-header-title" ng-show="bankAccount.id">{{bankAccount.accountHolderName}}</span>
+            <span class="bank-header-subtitle">{{ bankAccount.isActive ? "Direct Deposit Active" : "Not Active [NC2 not connected]"}}</span>
+        </div>
+
+        <div class="bank-header-avatar-wrapper">
+            <img ng-show="bankAccount.isActive" src="img/bank-active.png" />
+            <img ng-show="!bankAccount.isActive" src="img/bank-unactive.png" />
+        </div>
+    </div>
+
+    <div class="col-xs-offset-1 col-xs-10">
+        <form ng-submit="edit(bankAccount, $index)" class="row" id="bank-form">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="form-group required">
+                        <label for="accountHolderName">
+                            <span data-toggle="tooltip" data-placement="left" title="LetULet uses this information to comply with US banking regulations" class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+                            Bank Account Holder Legal Name
+                        </label>
+                        <input ng-disabled="bankAccount.isLoading" ng-model="bankAccount.accountHolderName" name="data[BankAccount][accountHolderName]" type="text" class="form-control" id="accountHolderName" required>
+                    </div>
+                </div>
+
+                <div class="col-xs-12">
+                    <p style="margin-bottom: 15px;margin-top: 10px;">Address Associated with Bank Account</p>
+                </div>
+
+                <div class="col-xs-12">
+                    <div class="form-group required">
+                        <label for="streetAddress">
+                            <span data-toggle="tooltip" data-placement="left" title="LetULet uses this information to comply with US banking regulations" class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+                            Street Address
+                        </label>
+                        <input ng-disabled="bankAccount.isLoading" ng-model="bankAccount.streetAddress" name="data[BankAccount][streetAddress]" type="text" class="form-control" id="streetAddress" required>
+                    </div>
+                </div>
+
+                <div class="col-xs-12">
+                    <div class="form-group required">
+                        <label for="city">City</label>
+                        <input ng-disabled="bankAccount.isLoading" ng-model="bankAccount.city" name="data[BankAccount][city]" type="text" class="form-control" id="city" required >
+                    </div>
+                </div>
+
+                <div class="col-xs-4">
+                    <div class="form-group required">
+                        <label for="state">State</label>
+                        <input ng-disabled="bankAccount.isLoading" ng-model="bankAccount.state" name="data[BankAccount][state]" type="text" class="form-control" id="state" required>
+                    </div>
+                </div>
+
+                <div class="col-xs-4">
+                    <div class="form-group required">
+                        <label for="zipCode">Zip</label>
+                        <input ng-disabled="bankAccount.isLoading" ng-model="bankAccount.zipCode" name="data[BankAccount][zipCode]" type="text" class="form-control" id="zipCode" required>
+                    </div>
+                </div>
+
+                <div class="col-xs-12">
+                    <div class="form-group required">
+                        <label for="bankRoutingNumber">Bank Routing Number</label>
+                        <input ng-disabled="bankAccount.isLoading" ng-model="bankAccount.routingNumber" name="data[BankAccount][routingNumber]" placeholder="9-digit routing number" type="text" class="form-control" id="bankRoutingNumber" required>
+                    </div>
+                </div>
+                <!--<div class="col-xs-12">
+                    <div class="form-group required">
+                        <label for="bankAccountNumber">Bank Account Number</label>
+                        <input ng-model="bankAccount.accountNumber" name="data[BankAccount][accountNumber]" placeholder="Enter account number" type="text" class="form-control" id="bankAccountNumber" required>
+                    </div>
+                </div>-->
+                <!--<div class="col-xs-12">
+                    <div class="form-group required">
+                        <label for="confirmBankAccountNumber">Confirm Bank Account Number</label>
+                        <input placeholder="Confirm account number" type="text" class="form-control" id="confirmBankAccountNumber" required>
+                    </div>
+                </div>-->
+                <div class="col-xs-12">
+                    <div class="form-group required">
+                        <label for="companyName">Company Name</label>
+                        <input ng-disabled="bankAccount.isLoading" ng-model="bankAccount.companyName" name="data[BankAccount][companyName]" type="text" class="form-control" id="companyName" required>
+                    </div>
+                </div>
+                <div class="col-xs-12">
+                    <div class="form-group required">
+                        <label for="SSN">
+                            <span data-toggle="tooltip" data-placement="left" title="LetULet uses this information to issue 1099's at year end" class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+                            SSN or EIN
+                        </label>
+                        <input ng-disabled="bankAccount.isLoading" ng-model="bankAccount.SSN" name="data[BankAccount][SSN]" type="text" class="form-control" id="SSN" required>
+                    </div>
+                </div>
+
+                <div class="col-xs-12">
+                    <div class="form-group required">
+                        <label for="dateOfBirth">
+                            <span data-toggle="tooltip" data-placement="left" title="LetULet uses this information to comply with US banking regulations" class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+                            Date of Birth</label>
+                        <input ng-disabled="bankAccount.isLoading" pikaday="dateOfBirthPikaday" ng-model="bankAccount.dateOfBirth" name="data[BankAccount][dateOfBirth]" type="text" class="form-control" id="dateOfBirth" required>
+                    </div>
+                </div>
+
+                <div ng-show="!bankAccount.id" class="col-xs-offset-1 col-xs-10">
+                    <button type="submit" class="btn btn-fullwidth btn-lg btn-rounded btn-red">{{bankAccount.isLoading ? "LOADING ..." : "ADD BANK ACCOUNT"}}</button>
+                </div>
+
+                <div class="col-xs-12">
+                    <p ng-show="bankAccount.message" class="text-danger" style="margin-bottom: -25px;">{{bankAccount.message}}</p>
+                </div>
+
+                <div ng-show="bankAccount.id" class="col-xs-12 bank-btn-group">
+                    <div class="row">
+                        <div class="col-xs-3">
+                            <button ng-hide="bankAccount.isLoading" ng-click="openDeleteModal(bankAccount)" type="button" class="btn btn-delete btn-link btn-graylight">Delete</button>
+                        </div>
+                        <div class="col-xs-offset-1 col-xs-3">
+                            <button ng-hide="bankAccount.isLoading" ng-click="bankAccount.edit = false" type="button" class="btn btn-back btn-link btn-blacklight">Back</button>
+                        </div>
+                        <div class="col-xs-5">
+                            <button type="submit" class="btn btn-red btn-fullwidth btn-rounded">{{bankAccount.isLoading ? "Loading ..." : "Edit"}}</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

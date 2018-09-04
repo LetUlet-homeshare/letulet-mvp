@@ -1,0 +1,87 @@
+$black : #454545;
+
+.letulet-menu {
+
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: $black;
+  padding-top: 40px;
+
+  > * {
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .logo {
+  }
+
+  .menu {
+
+    width: 100%;
+
+    ul {
+      margin-top: 0;
+      margin-bottom: 10px;
+      padding: 0;
+      list-style: none;
+
+      li {
+        font-family: Baloo_Regular;
+        font-size: 20px;
+
+        border-right-width: 10px;
+        border-right-style: solid;
+        border-right-color: transparent;
+
+        a.menu-link {
+
+          padding-top: 18px;
+          padding-bottom: 19px;
+          padding-left: 38px;
+
+          color: #767676;
+          display: flex;
+          align-items: center;
+          text-decoration: none;
+
+          .icon {
+
+            margin-right: 23px;
+          }
+        }
+      }
+
+      li.active,
+      li:hover {
+        background-color: #343434;
+        border-right-color: #E24660;
+
+        a.menu-link {
+          color: white;
+
+          .icon {
+            filter: brightness(100);
+          }
+        }
+      }
+    }
+  }
+
+  .footer {
+    color: white;
+    font-family: WorkSan_Regular;
+    font-size: 10px;
+
+    position: absolute;
+    bottom: 40px;
+
+    p {
+      margin: 0;
+      text-align: center;
+    }
+  }
+}

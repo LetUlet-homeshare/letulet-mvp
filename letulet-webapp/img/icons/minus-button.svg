@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="17px" viewBox="0 0 16 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
+    <title>Minus Button</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Tenant-Wizard---Property-Info" transform="translate(-342.000000, -596.000000)">
+            <g id="Property-Information-Page" transform="translate(264.000000, 199.000000)">
+                <g id="Bedroom-Count" transform="translate(69.000000, 370.000000)">
+                    <g id="Minus-Button" transform="translate(9.000000, 27.000000)">
+                        <rect id="Rectangle-3-Copy-2" fill="#E24660" x="-1.13686838e-13" y="0.109834965" width="16" height="16" rx="3"></rect>
+                        <path d="M4.5,7.87697313 C4.5,7.72952674 4.611877,7.60983496 4.75000446,7.60983496 L11.2501205,7.60983496 C11.388123,7.60983496 11.5,7.7293933 11.5,7.87697313 C11.5,8.02428608 11.388123,8.14384442 11.2501205,8.14384442 L4.75000446,8.14384442 C4.611877,8.14384442 4.5,8.02428608 4.5,7.87697313 Z" id="Shape-Copy" stroke="#FFFFFF" fill="#000000" fill-rule="nonzero"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

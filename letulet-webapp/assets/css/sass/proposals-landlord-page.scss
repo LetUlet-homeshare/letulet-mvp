@@ -1,0 +1,48 @@
+.proposals-landlord-page {
+  .agreement-list {
+    .agreement-item-list {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 35px;
+      padding-bottom: 35px;
+      font-size: 15px;
+
+      .description {
+        font-size: 15px;
+
+        .name {
+          color: #454545;
+          font-family: Baloo_Regular;
+          font-size: 17px;
+        }
+      }
+
+      .address {
+        color: #454545;
+      }
+
+      .actions {
+        flex: 0 1 35%;
+        text-align: right;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+    }
+
+    .agreement-item-list:not(:first-child) {
+      border-top: solid 1px #d4d4d4;
+    }
+  }
+
+  .gray {
+    color: #9B9B9B;
+  }
+
+  .btn {
+    padding: 9px 17px;
+    text-transform: capitalize;
+    margin: 0 8px;
+  }
+}

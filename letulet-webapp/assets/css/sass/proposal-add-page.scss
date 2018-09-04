@@ -1,0 +1,378 @@
+form.form-payout {
+  font-size: 13px;
+  text-align: left;
+  font-family: WorkSan_Regular;
+
+  input {
+    text-align: center;
+    width: 48px !important;
+  }
+
+  input#payout {
+    width: 100px !important;
+  }
+}
+
+.proposal-add-page {
+
+  font-family: WorkSan_Regular;
+  font-size: 15px;
+
+  .right-side {
+
+    text-align: center;
+    padding-left: 0;
+
+    .illustration {
+
+      width: 126px;
+      margin-bottom: 47px;
+    }
+
+    .tip {
+
+      display:none;
+      font-family: WorkSan_Regular;
+      font-size: 14px;
+      padding: 0 30px;
+
+      .tip-title {
+        font-family: Baloo_Regular;
+        font-size: 20px;
+        margin-top: 0;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+      }
+
+      .tip-info {
+        margin-bottom: 65px;
+      }
+
+      .btn-black {
+        margin-top: 20px;
+      }
+    }
+
+    .tip.active {
+      display: block;
+    }
+
+    .steps-wrapper {
+      display: inline-block;
+      border-radius: 0 0 65px 65px;
+      background-color: #f8f8f8;
+      padding-top: 75px;
+      padding-left: 35px;
+      padding-right: 35px;
+      padding-bottom: 35px;
+      margin-bottom: 57px;
+
+      ul.steps {
+
+        padding: 0;
+        list-style: none;
+
+        li.step-number {
+          margin-bottom: 24px;
+          width: 64px;
+          height: 64px;
+          border-radius: 100%;
+          display: flex;
+          align-items: center;
+          font-size: 25px;
+          justify-content: center;
+          font-family: Baloo_Regular;
+          color: white;
+          position: relative;
+        }
+
+        li.step-number:last-child {
+          margin-bottom: 0;
+        }
+
+        li.step-number,
+        li.step-number:after,
+        li.step-number:before {
+          background-color: #D8D8D8;
+        }
+
+        li.step-number.active,
+        li.step-number.active:before,
+        li.step-number.active:after {
+          background-color: #E24660;
+        }
+
+        li.step-number:not(:first-child):before {
+          width: 10px;
+          height: 12px;
+          content: "";
+          display: block;
+          position: absolute;
+          top: -12px;
+          left: 27px;
+        }
+
+        li.step-number:not(:last-child):after {
+          width: 10px;
+          height: 12px;
+          content: "";
+          display: block;
+          position: absolute;
+          bottom: -12px;
+          left: 27px;
+        }
+      }
+    }
+  }
+
+  .step {
+
+    margin-bottom: 30px;
+    pointer-events: none;
+
+    border-radius: 10px;
+    background-color: #ffffff;
+    padding: 40px 70px 40px 70px;
+    opacity: 0.5;
+    display: none;
+
+    .step-title {
+
+      font-family: WorkSan_Medium;
+      font-size: 13px;
+      font-weight: 500;
+      text-align: left;
+      color: #ffffff;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+
+      .title {
+        font-size: 25px;
+        line-height: 1.08;
+        text-align: left;
+        color: #ffffff;
+        font-family: Baloo_Regular;
+        margin-bottom: 5px;
+        margin-top: 0;
+      }
+    }
+
+    .step-title.step-background-1 {
+      background-color: #ffffff;
+      background-image: url($imgpath + 'step-header-1.svg');
+      background-repeat: no-repeat;
+      padding: 40px 35px 40px 70px;
+    }
+
+    .step-title.step-background-2 {
+      background-color: #ffffff;
+      background-image: url($imgpath + 'step-header-2.svg');
+      background-repeat: no-repeat;
+      padding: 40px 35px 40px 70px;
+    }
+
+    .step-title.step-background-3 {
+      background-color: #ffffff;
+      background-image: url($imgpath + 'proposal-bkg-1.png');
+      background-repeat: no-repeat;
+      padding: 47px 35px 60px 70px;
+    }
+
+    .step-title.step-background-4 {
+      background-color: #ffffff;
+      background-image: url($imgpath + 'proposal-bkg-4.png');
+      background-repeat: no-repeat;
+      padding: 47px 35px 60px 70px;
+    }
+
+    h1 {
+      margin-top: 0;
+      font-family: Baloo_Regular;
+      font-size: 25px;
+      color: #454545;
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      font-family: WorkSan_Regular;
+      font-size: 13px;
+      text-align: left;
+      color: #454545;
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      margin-bottom: 25px;
+      margin-top: 0;
+      font-size: 15px;
+      font-weight: 600;
+      text-align: left;
+      color: #454545;
+      font-family: WorkSan_SemiBold;
+    }
+
+    form {
+
+      .form-group {
+
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  .step-with-title {
+
+    padding-top: 0;
+    padding-bottom: 65px;
+    padding-left: 0;
+    padding-right: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+    .step-content {
+      padding-left: 70px;
+      padding-right: 35px;
+      padding-top: 65px;
+    }
+  }
+
+  .step.active {
+    display: block;
+    opacity: 1;
+    pointer-events: all;
+  }
+
+
+}
+
+//Charts
+#chart-payout {
+
+  .highcharts-subtitle {
+    font-family: WorkSan_Regular;
+    font-size: 9px;
+  }
+
+  .highcharts-title {
+    font-family: Baloo_Regular;
+    font-size: 25px;
+    text-align: left;
+    fill: #454545;
+  }
+
+  .highcharts-credits {
+    display:none;
+  }
+}
+
+//Info payout
+.info-payout {
+
+  margin-bottom: 15px;
+  width: 100%;
+
+  td {
+    font-family: WorkSan_Light;
+    font-size: 17px;
+    font-weight: 300;
+    color: #454545;
+  }
+
+  th {
+    font-family: WorkSan_Medium;
+    font-size: 18px;
+    font-weight: 500;
+    color: #454545;
+    padding: 8px 0;
+  }
+}
+
+//View proposal
+.view-proposal {
+
+  border-radius: 10px;
+  background-color: #ffffff;
+  width: 100%;
+  box-shadow: 0px 0px 29px 0px rgba(0,0,0,0.15);
+
+  .view-proposal-header {
+    height: 190px;
+    display: flex;
+    align-items: center;
+
+    background-size: cover;
+    background-position: center center;
+    background-image: url($imgpath + 'view-proposal-header.png');
+    padding-left: 50px;
+
+    position: relative;
+
+    .view-proposal-header-title {
+      font-family: Baloo_Regular;
+      font-size: 30px;
+      color: white;
+      margin-bottom: 12px;
+    }
+
+    .view-proposal-header-subtitle {
+      font-size: 13px;
+      color: white;
+    }
+
+    .stamp {
+      position: absolute;
+      right: 25px;
+      top: 0px;
+      width: 90px;
+    }
+  }
+
+  .view-proposal-content {
+    padding-top: 30px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-bottom: 35px;
+
+    font-family: WorkSan_Regular;
+    font-size: 13px;
+    text-align: left;
+  }
+}
+
+.popover {
+  pointer-events: all;
+}
+.popover.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.features {
+
+  .feature {
+
+    font-size: 15px;
+    text-align: center;
+    color: #454545;
+
+    .feature-icon {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    .feature-title {
+      font-size: 20px;
+      font-weight: 600;
+      text-align: center;
+      color: #454545;
+      font-family: WorkSan_SemiBold;
+      margin: 0;
+      margin-bottom: 25px;
+      min-height: 45px;
+    }
+
+    .feature-content {
+      margin-bottom: 25px;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+
+.scrolling-down:before {
+  content: " ";
+  display: inline-block;
+  width: 17px;
+  height: 9px;
+
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url($imgpath + 'icons/scroll-down.svg');
+}

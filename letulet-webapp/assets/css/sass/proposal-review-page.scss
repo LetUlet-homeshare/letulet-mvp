@@ -1,0 +1,148 @@
+.proposal-review-page {
+
+  background-color: #F6F6F6;
+  font-family: WorkSan_Regular;
+  font-size: 15px;
+
+  #chartspayoutmodal,#edithosting {
+
+    display: none;
+  }
+
+  .widget {
+    margin-bottom: 80px;
+  }
+
+  .widget.floating {
+    margin-top: -215px;
+  }
+
+  .cover {
+    width: 100%;
+    height: 626px;
+    background-image: url($imgpath + 'proposal_accept_cover.png');
+    background-repeat:no-repeat;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    font-family: Baloo_Regular;
+    font-size: 70px;
+  }
+
+  .container:first-child {
+    margin-top: -230px;
+  }
+
+  .create-addendum {
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+
+  .cards {
+    display: flex;
+    align-items: normal;
+    justify-content: space-between;
+    margin-bottom: 60px;
+    margin-top: 60px;
+  }
+
+  .card {
+
+    background-color: #ffffff;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15);
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-top: 45px;
+    position: relative;
+    max-width: 240px;
+
+    .card-icon.floating {
+      margin-top: -64%;
+    }
+
+    .card-number {
+      width: 43px;
+      height: 41px;
+      background-color: #68e2c2;
+      position: absolute;
+      left:0;
+      top:20px;
+      font-family: WorkSan_Bold;
+      color:#FFFFFF;
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    h1 {
+      margin-top: 0px;
+      font-size: 30px;
+      color: #68E2C2;
+      font-family: Baloo_Regular;
+    }
+
+    p, h1 {
+      margin-bottom: 13px;
+    }
+  }
+
+  .card-xs {
+
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 30px;
+    margin: 0 10px;
+    flex: 1 1 0;
+
+    .card-icon-wrapper {
+      min-height: 120px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+
+
+    h1 {
+      color: #454545;
+      font-size: 20px;
+      margin-bottom: 10px;
+      font-family: WorkSan_SemiBold;
+    }
+  }
+}
+
+.proposal-review-page.open {
+  .widget.floating {
+    margin-bottom:0;
+  }
+
+  #chartspayoutmodal,
+  #edithosting {
+
+    display: block;
+  }
+}
+
+#chartspayoutmodal {
+  margin-bottom: 0;
+
+  #chart-payout {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.subtitle {
+  font-size: 20px;
+  margin-bottom: 35px;
+}
+
+#form-rules, #form-hosting {
+  margin-top: 35px;
+}

@@ -1,0 +1,55 @@
+$fontpath : "../fonts/";
+
+@font-face {
+  font-family: Baloo_Regular;
+  src: url($fontpath + 'Baloo/Baloo-Regular.ttf');
+}
+
+@font-face {
+  font-family: WorkSan_Black;
+  src: url($fontpath + 'Work_Sans/WorkSans-Black.ttf');
+}
+
+@font-face {
+  font-family: WorkSan_Bold;
+  src: url($fontpath + 'Work_Sans/WorkSans-Bold.ttf');
+}
+
+@font-face {
+  font-family: WorkSan_ExtraBold;
+  src: url($fontpath + 'Work_Sans/WorkSans-ExtraBold.ttf');
+}
+
+@font-face {
+  font-family: WorkSan_ExtraLight;
+  src: url($fontpath + 'Work_Sans/WorkSans-ExtraLight.ttf');
+}
+
+@font-face {
+  font-family: WorkSan_Light;
+  src: url($fontpath + 'Work_Sans/WorkSans-Light.ttf');
+}
+
+@font-face {
+  font-family: WorkSan_Medium;
+  src: url($fontpath + 'Work_Sans/WorkSans-Medium.ttf');
+}
+
+@font-face {
+  font-family: WorkSan_Regular;
+  src: url($fontpath + 'Work_Sans/WorkSans-Regular.ttf');
+}
+
+@font-face {
+  font-family: WorkSan_SemiBold;
+  src: url($fontpath + 'Work_Sans/WorkSans-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: WorkSan_Thin;
+  src: url($fontpath + 'Work_Sans/WorkSans-Thin.ttf');
+}
+
+.medium {
+  font-family: WorkSan_Medium;
+}

@@ -1,0 +1,102 @@
+<div ng-show="!bankAccount.edit" class="bank view-bank">
+    <div class="bank-header">
+        <div class="bank-header-title-wrapper">
+            <span class="bank-header-title" ng-show="bankAccount.id">{{bankAccount.accountHolderName}}</span>
+            <span class="bank-header-subtitle">{{ bankAccount.isActive ? "Direct Deposit Active" : "Not Active [NC2 not connected]"}}</span>
+        </div>
+        <div class="bank-header-avatar-wrapper">
+            <img ng-show="bankAccount.isActive" src="img/bank-active.png" />
+            <img ng-show="!bankAccount.isActive" src="img/bank-unactive.png" />
+        </div>
+    </div>
+
+    <div class="col-xs-12 no-padding">
+        <ul class="bank-transactions" ng-if="bankAccount.transactions.length == 0">
+            <li class="bank-transaction empty">
+                <div class="bank-transaction-details">
+                    <span class="bank-transaction-details-amount">No Transaction</span>
+                    <span class="bank-transaction-details-date">12/1/2017</span>
+                </div>
+                <div class="bank-transaction-status">
+                    <span>Direct Deposit Successful</span>
+                </div>
+            </li>
+            <li class="bank-transaction empty">
+                <div class="bank-transaction-details">
+                    <span class="bank-transaction-details-amount">No Transaction</span>
+                    <span class="bank-transaction-details-date">12/1/2017</span>
+                </div>
+                <div class="bank-transaction-status">
+                    <span>Direct Deposit Successful</span>
+                </div>
+            </li>
+            <li class="bank-transaction empty">
+                <div class="bank-transaction-details">
+                    <span class="bank-transaction-details-amount">No Transaction</span>
+                    <span class="bank-transaction-details-date">12/1/2017</span>
+                </div>
+                <div class="bank-transaction-status">
+                    <span>Direct Deposit Successful</span>
+                </div>
+            </li>
+            <li class="bank-transaction empty">
+                <div class="bank-transaction-details">
+                    <span class="bank-transaction-details-amount">No Transaction</span>
+                    <span class="bank-transaction-details-date">12/1/2017</span>
+                </div>
+                <div class="bank-transaction-status">
+                    <span>Direct Deposit Successful</span>
+                </div>
+            </li>
+            <li class="bank-transaction empty">
+                <div class="bank-transaction-details">
+                    <span class="bank-transaction-details-amount">No Transaction</span>
+                    <span class="bank-transaction-details-date">12/1/2017</span>
+                </div>
+                <div class="bank-transaction-status">
+                    <span>Direct Deposit Successful</span>
+                </div>
+            </li>
+            <li class="bank-transaction empty">
+                <div class="bank-transaction-details">
+                    <span class="bank-transaction-details-amount">No Transaction</span>
+                    <span class="bank-transaction-details-date">12/1/2017</span>
+                </div>
+                <div class="bank-transaction-status">
+                    <span>Direct Deposit Successful</span>
+                </div>
+            </li>
+            <li class="bank-transaction empty">
+                <div class="bank-transaction-details">
+                    <span class="bank-transaction-details-amount">No Transaction</span>
+                    <span class="bank-transaction-details-date">12/1/2017</span>
+                </div>
+                <div class="bank-transaction-status">
+                    <span>Direct Deposit Successful</span>
+                </div>
+            </li>
+        </ul>
+        <ul class="bank-transactions" ng-if="bankAccount.transactions.length > 0">
+            <li ng-repeat="transaction in bankAccount.transactions track by $index" class="bank-transaction">
+                <div class="bank-transaction-details">
+                    <span class="bank-transaction-details-amount">$ {{transaction.amount}}</span>
+                    <span class="bank-transaction-details-date">12/1/2017</span>
+                </div>
+                <div class="bank-transaction-status">
+                    <span>{{transaction.status == "PROCESSED" ? 'Direct Deposit Successful' : 'Direct Deposit Unsuccessful'}}</span>
+                </div>
+                <div ng-hide="transaction.status == 'PROCESSED'" class="bank-transaction-status">
+                    <button ng-click="retryTransaction(transaction)" class="btn btn-green">Retry</button>
+                </div>
+            </li>
+        </ul>
+
+        <div class="text-center">
+            <a href="#" class="see-more-link green medium"></a>
+        </div>
+
+        <div class="col-xs-offset-1 col-xs-10">
+            <button ng-click="bankAccount.edit = true" type="button" class="btn btn-fullwidth btn-lg btn-rounded btn-red">EDIT BANK ACCOUNT</button>
+        </div>
+    </div>
+</div>

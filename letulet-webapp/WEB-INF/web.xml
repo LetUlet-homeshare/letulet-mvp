@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * Copyright (c) 2012 Crosspollinate.org
+ * All rights reserved.
+ *
+ * THIS PROGRAM IS CONFIDENTIAL AND AN UNPUBLISHED WORK AND TRADE
+ * SECRET OF THE COPYRIGHT HOLDER, AND DISTRIBUTED ONLY UNDER RESTRICTION.
+ *
+ * EXCEPT AS EXPLICITLY STATED IN A WRITTEN AGREEMENT BETWEEN THE PARTIES,
+ * THE SOFTWARE IS PROVIDED AS-IS, WITHOUT WARRANTIES OF ANY KIND, EXPRESS
+ * OR IMPLIED, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NONINFRINGEMENT,
+ * PERFORMANCE, AND QUALITY. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+ * HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN
+ * AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+ * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ *
+ */
+-->
+<web-app id="WebApp_ID" version="2.4"
+	xmlns="http://java.sun.com/xml/ns/j2ee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+	<display-name>Paris Luxury Rentals</display-name>
+	<welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+    <!-- listen to application startup and shutdown -->
+	<listener>
+		<listener-class>com.letulet.backend.BackendWebAppContext</listener-class>
+	</listener>
+>    <!--
+	<filter-mapping>
+		<filter-name>LoginFilter</filter-name>
+		<url-pattern>/admin/*</url-pattern>
+	</filter-mapping>-->
+    <session-config>
+		<session-timeout>7200</session-timeout> 
+	</session-config>
+
+	<!-- authentication -->
+	<!-- security-constraint>
+		<web-resource-collection>
+			<web-resource-name>The entire webapp</web-resource-name>
+			<url-pattern>/*</url-pattern>
+		</web-resource-collection>
+		<auth-constraint>
+			<role-name>tomcat</role-name>
+		</auth-constraint>
+	</security-constraint>
+	<login-config>
+		<auth-method>BASIC</auth-method>
+		<realm-name>Development</realm-name>
+	</login-config>
+	<security-role>
+		<role-name>tomcat</role-name>
+	</security-role -->
+	
+</web-app>

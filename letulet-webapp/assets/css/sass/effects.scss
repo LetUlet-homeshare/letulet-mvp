@@ -1,0 +1,14 @@
+.doFadeIn {
+  -webkit-animation:fadeInSlide forwards ease-in 350ms;
+  animation:fadeInSlide forwards ease-in 350ms;
+}
+.doFadeOut {
+  -webkit-animation:fadeOutSlideDown forwards ease-out 350ms;
+  animation:fadeOutSlideDown forwards ease-out 350ms;
+}
+
+@keyframes fadeInSlide
+{
+  0% { opactity:0; transform: translateX(-100px); }
+  100% { opactity:1; transform: translateX(0); }
+}

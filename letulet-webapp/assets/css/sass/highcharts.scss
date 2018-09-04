@@ -1,0 +1,52 @@
+.highcharts-tooltip-content {
+
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
+
+  font-family: WorkSan_Medium;
+  font-size: 9px;
+  font-weight: 500;
+  line-height: 1.44;
+  text-align: center;
+  color: #828282;
+
+  .highcharts-tooltip-date {
+
+    font-family: WorkSan_Medium;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+    color: #828282;
+
+  }
+
+  .highcharts-tooltip-price {
+
+    h1 {
+      margin-top: 0px;
+      margin-bottom: 0px;
+      font-family: Baloo_Regular;
+      font-size: 25px;
+      text-align: center;
+      color: #68e2c2;
+    }
+
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-bottom: 1px solid #d4d4d4;
+  }
+
+  .highcharts-tooltip-info {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+}

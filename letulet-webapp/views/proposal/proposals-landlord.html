@@ -1,0 +1,38 @@
+<div class="row">
+    <div class="col-xs-12">
+        <div class="widget">
+            <h1 class="widget-title">Homeshare Revenue</h1>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="agreement-list">
+                        <div ng-repeat="proposal in proposals">
+
+                            <div class="agreement-item-list">
+                                <div class="description">
+                                    <span class="name">Proposal from {{proposal.Tenant.bestProfile}}</span>
+                                    <br/>
+                                    <span class="gray">Status: {{getProposalStatus(proposal)}}</span>
+                                </div>
+                                <div class="address">
+                                    {{proposal.Property.address}}
+                                    <br/>{{proposal.Property.city}}
+                                </div>
+                                <div class="share">
+                                    {{proposal.landlordCommissionRate}}% Share<br/>Revenue
+                                </div>
+                                <div class="actions">
+                                    <button ng-show="proposal.LandlordBankAccount && !proposal.LandlordBankAccount.isDeleted" ng-click="updateBankAccount(proposal)" class="btn btn-rounded btn-green">Update Bank</button>
+                                    <button ng-show="!proposal.LandlordBankAccount || (proposal.LandlordBankAccount && proposal.LandlordBankAccount.isDeleted)" ng-click="openCreateBankAccountModal(proposal)" class="btn btn-rounded btn-green">Connect bank account</button>
+                                    <button ng-click="viewProposal(proposal)" ng-show="proposal.status == 'NEW'" style="margin-right: 0;" class="btn btn-rounded btn-red">View Proposal</button>
+                                    <button ng-click="viewProposal(proposal)" ng-show="proposal.status == 'DECLINED'" style="margin-right: 0;" class="btn btn-rounded btn-red">View Proposal</button>
+                                    <button ng-click="viewProposal(proposal)" ng-show="proposal.status == 'ACCEPTED'" style="margin-right: 0;" class="btn btn-rounded btn-red">View Agreement</button>
+                                </div>
+                            </div>
+                            <div ng-include="'views/proposal/proposal-agreement-modal.html'"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

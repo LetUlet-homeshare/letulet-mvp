@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="18px" viewBox="0 0 12 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Tenant---Dashboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-1341.000000, -695.000000)">
+        <g id="Group-8" transform="translate(954.906116, 695.586865)" fill="#E5E5E5" fill-rule="nonzero" stroke="#E5E5E5">
+            <path d="M399.900471,4.84737708 L392.455182,12.965146 C392.432029,12.9991956 392.43986,13.0438006 392.409896,13.0741048 C392.2754,13.2089413 392.097321,13.2671661 391.921284,13.2589942 C391.74695,13.2658041 391.571254,13.2068983 391.43778,13.0737643 C391.408157,13.0438006 391.416328,12.9998766 391.393515,12.9668485 L383.947205,4.84873906 C383.693876,4.59506942 383.693876,4.18477155 383.947205,3.93110191 C384.200534,3.67811327 384.610832,3.67811327 384.864501,3.93110191 L391.922987,11.6273366 L398.982494,3.93076142 C399.235823,3.67675128 399.646461,3.67675128 399.89979,3.93076142 C400.15346,4.18340957 400.15346,4.59404794 399.900471,4.84737708 Z" id="Shape" transform="translate(391.923668, 8.500000) rotate(-90.000000) translate(-391.923668, -8.500000) "></path>
+        </g>
+    </g>
+</svg>

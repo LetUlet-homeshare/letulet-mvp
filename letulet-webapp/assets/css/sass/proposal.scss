@@ -1,0 +1,91 @@
+.proposals {
+
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 15px;
+  font-family: WorkSan_Regular;
+
+  .proposal {
+
+    border-radius: 10px;
+    background-color: #FFFFFF;
+
+    flex: 0 1 375px;
+    height: 365px;
+    margin: 35px;
+
+    padding: 50px 60px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    h1 {
+      font-family: Baloo_Regular;
+      font-size: 25px;
+      line-height: 28px;
+      margin-top: 0px;
+      margin-bottom: 15px;
+    }
+
+    .proposal-status {
+      color: #9B9B9B;
+      font-size: 15px;
+      font-family: WorkSan_Bold;
+      margin-bottom: 25px;
+    }
+
+    .proposal-info {
+      margin-bottom: 35px;
+    }
+
+    a.add-proposal {
+
+      text-align: center;
+
+      img {
+        width: 100px;
+      }
+    }
+
+    a.add-proposal:hover {
+
+      img {
+        width: 90px;
+      }
+    }
+  }
+}
+
+.proposals-list {
+  font-size: 15px;
+  font-family: WorkSan_Regular;
+
+  .proposal-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-top: 35px;
+    padding-bottom: 35px;
+    border-bottom: solid 1px #d4d4d4;
+
+    .title {
+      font-family: WorkSan_bold;
+      font-size: 17px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    button {
+      font-size: 15px;
+    }
+
+    a, a:hover {
+      color: black;
+    }
+
+    .proposal-list-item {
+
+    }
+  }
+}

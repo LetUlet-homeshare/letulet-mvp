@@ -1,0 +1,681 @@
+.dashboard-page {
+
+  .no-padding {
+    padding: 0;
+  }
+
+  .guest{
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}
+
+//Satistics
+.statistic {
+
+  color: #000000;
+  font-family: WorkSan_Regular;
+  font-size: 18px;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-radius: 5px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  position: relative;
+
+  .statistic-number {
+    font-family: Baloo_Regular;
+    margin-bottom: 15px;
+    font-size: 55px;
+  }
+  p {
+    margin: 0;
+    z-index: 2;
+  }
+}
+
+.statistic:before {
+  border-radius: 100px 5px 5px 5px;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.statistic.statistic-green {
+  background-color: rgba(104, 226, 195, 0.7);
+}
+
+.statistic.statistic-green:before {
+  background-color: white;
+}
+
+.statistic.statistic-yellow {
+  background-color: #F6DF71;
+}
+
+.statistic.statistic-yellow:before {
+  background-color: white;
+}
+
+.statistic.statistic-purple {
+  background-color: #CE93FF;
+}
+
+.statistic.statistic-purple:before {
+  background-color: white;
+}
+
+//Guests
+.guest {
+
+  color: #000000;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-radius: 10px;
+  z-index: 99;
+
+  position: relative;
+
+  font-family: WorkSan_Medium;
+  font-size: 13px;
+  font-weight: 500;
+  text-align: left;
+
+  .guest-title {
+    font-size: 12px;
+    text-align: left;
+    color: #828282;
+  }
+
+  .guest-name {
+    font-family: Baloo_Regular;
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+
+  .guest-address {
+    font-size: 12px;
+    text-align: left;
+  }
+
+  .guest-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 100%;
+
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        width: 15px;
+        margin-right: 9px;
+      }
+    }
+  }
+
+  p {
+    margin: 0;
+    z-index: 2;
+  }
+}
+
+.guest:before {
+  border-radius: 100px 10px 0 10px;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  z-index: 0;
+}
+
+.guest.guest-green {
+  background-color: rgba(104, 226, 195, 0.7);
+}
+
+.guest.guest-green:before {
+  background-color: white;
+}
+
+.guest.guest-yellow {
+  background-color: #F6DF71;
+}
+
+.guest.guest-yellow:before {
+  background-color: white;
+}
+
+.guest.guest-purple {
+  background-color: #CE93FF;
+}
+
+.guest.guest-purple:before {
+  background-color: white;
+}
+
+.guest.guest-red {
+  background-color: #e24660;
+}
+
+.guest.guest-red:before {
+  background-color: white;
+}
+
+//Inquiries
+.inquiries {
+
+  .inquiry:first-child {
+    border-top: 2px solid #d4d4d4;
+  }
+
+  .inquiry:last-child {
+    border-bottom: 2px solid #d4d4d4;
+  }
+
+  .inquiry {
+
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-top: 1px solid #d4d4d4;
+    border-bottom: 1px solid #d4d4d4;
+
+    .inquiry-avatar {
+
+      flex: 0 1 15%;
+
+      text-align: left;
+
+      img {
+        width: 33px;
+        height: 33px;
+        border-radius: 100%;
+        background-color: #ececec;
+      }
+    }
+
+    .inquiry-content {
+      flex: 1 0 auto;
+
+      font-family: WorkSan_Medium;
+      font-size: 15px;
+      font-weight: 500;
+      text-align: left;
+      color: #c4c4c4;
+
+      p {
+        margin-bottom: 5px;
+      }
+
+      .inquiry-content-author {
+        font-family: WorkSan_Bold;
+        font-size: 15px;
+        font-weight: bold;
+        text-align: left;
+        color: #6b6b6b;
+      }
+
+      .inquiry-content-address {
+        font-size: 15px;
+        font-weight: 500;
+        text-align: left;
+        color: #c4c4c4;
+      }
+
+      .inquiry-content-time {
+        font-size: 12px;
+        font-weight: 500;
+        text-align: left;
+        color: #c4c4c4;
+      }
+    }
+
+    .inquiry-status {
+
+      flex: 0 1 40%;
+
+      font-family: WorkSan_Bold;
+      font-size: 15px;
+      font-weight: bold;
+      text-align: right;
+
+      line-height: 21px;
+    }
+  }
+}
+
+//Reservations
+.reservations {
+
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 20px;
+
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+
+  .reservation {
+
+    margin-right: 15px;
+    width: 160px;
+    flex: 0 0 auto;
+    min-height: 159.3px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+
+    display: flex;
+    flex-direction: column;
+
+    font-family: WorkSan_Medium;
+    font-size: 9px;
+    font-weight: 500;
+    text-align: left;
+
+    .reservation-avatar {
+      flex: 1 0 80px;
+      background-color: #ececec;
+    }
+
+    button {
+      display: none;
+
+      border-radius: 9.3px;
+      border:0;
+      background-color: #e24660;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      border-radius: 10px;
+
+      font-family: WorkSan_Bold;
+      font-size: 9px;
+      font-weight: bold;
+      text-align: left;
+      color: #ffffff;
+      position: absolute;
+      right: 10px;
+      top: -12px;
+    }
+    
+    .reservation-content {
+
+      position:relative;
+      flex: 1 0 auto;
+      padding:15px;
+
+      p {
+        margin: 0;
+      }
+
+      .reservation-content-date {
+        font-family: WorkSan_Bold;
+        font-size: 13px;
+        font-weight: bold;
+        margin-bottom: 6px;
+      }
+    }
+  }
+
+  .reservation.checkin {
+    button {
+      display:block;
+    }
+  }
+
+
+}
+
+//Bank
+.bank {
+  .bank-header {
+
+    display: flex;
+    justify-content: space-between;
+
+    .bank-header-title-wrapper {
+      margin-bottom: 25px;
+      font-family: WorkSan_Regular;
+      font-size: 15px;
+      text-align: left;
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+
+      .bank-header-title {
+        font-weight: bold;
+        color: #6B6B6B;
+        font-family: WorkSan_Bold;
+      }
+
+      .bank-header-subtitle {
+        font-weight: normal;
+        color: #C4C4C4;
+      }
+    }
+
+    .bank-header-avatar-wrapper {
+      width: 40px;
+      height: 40px;
+      background-color: #f1f1f1;
+      border-radius:40px;
+    }
+  }
+
+  ul.bank-transactions {
+
+    margin: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    min-height: 550px;
+
+    li.bank-transaction:last-child {
+      border-bottom: 1px solid #d4d4d4;
+    }
+
+    li.bank-transaction {
+      border-top: 1px solid #d4d4d4;
+      padding-top: 15px;
+      padding-bottom: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .bank-transaction-details {
+
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+
+        .bank-transaction-details-amount {
+          margin-bottom: 4px;
+          font-size: 15px;
+          font-family: WorkSan_Bold;
+          font-weight: bold;
+          text-align: left;
+          color: #6B6B6B;
+        }
+
+        .bank-transaction-details-date {
+          font-family: WorkSan_Medium;
+          color:#C4C4C4;
+          font-size: 12px;
+          font-weight: 500;
+          text-align: left;
+        }
+      }
+
+      .bank-transaction-status {
+        font-family: WorkSan_Medium;
+        font-size: 15px;
+        font-weight: 500;
+        text-align: left;
+        color:#C4C4C4;
+      }
+    }
+
+    li.bank-transaction.empty {
+
+      .bank-transaction-details-date {
+
+        background-color: #C4C4C4;
+        border-radius: 10px;
+        opacity: 0.2;
+        color: transparent;
+      }
+
+      .bank-transaction-status {
+        background-color: #C4C4C4;
+        border-radius: 10px;
+        opacity: 0.2;
+        color: transparent;
+      }
+    }
+  }
+
+  a.see-more-link {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: inline-block;
+  }
+
+  .btn-back,
+  .btn-delete {
+    font-family: Baloo_Regular;
+    font-size: 13px;
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.add-bank {
+  form button[type=submit] {
+    margin-top: 25px;
+  }
+}
+
+.edit-bank {
+  .bank-btn-group {
+    margin-top: 43px;
+  }
+}
+
+//Settings
+.setting {
+  border-radius: 5px;
+  background-color: #ffffff;
+  margin-bottom: 25px;
+
+  .setting-title {
+    font-size: 25px;
+    text-align: left;
+    color: #454545;
+    font-family: Baloo_Regular;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+  }
+
+  .setting-action {
+    font-size: 15px;
+    font-weight: 500;
+    text-align: left;
+    color: #68e2c2;
+    font-family: WorkSan_Medium;
+    text-decoration: none;
+  }
+
+  .setting-action {
+    padding-top: 20px;
+  }
+
+  .setting-rows {
+
+    .setting-row:last-child {
+      border-bottom: 1px solid #d4d4d4;
+    }
+
+    .setting-row {
+      padding-top:18px;
+      padding-bottom:18px;
+
+      font-family:WorkSan_Medium;
+      font-size: 15px;
+      font-weight: 500;
+      text-align: left;
+      border-top: 1px solid #d4d4d4;
+
+      padding-left: 0;
+      padding-right: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      p, label {
+        margin: 0;
+      }
+    }
+
+  }
+
+  .picture-wrapper {
+    position: relative;
+    .profile-picture {
+      width: 110px;
+      height: 110px;
+      border-radius: 110px;
+      margin-right: 20px;
+      margin-bottom: 0;
+    }
+
+    .btn-upload {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      border: 0;
+      padding: 0;
+    }
+  }
+}
+
+//Deposits
+.deposit-date {
+  font-size: 12px;
+  font-weight: 500;
+  text-align: left;
+  font-family: WorkSan_Medium;
+}
+
+//Charts
+#revenue {
+  .highcharts-credits {
+    display:none;
+  }
+
+  .tooltip {
+
+    text-align: center;
+
+    font-family: WorkSan_Medium;
+    font-size: 9px;
+    font-weight: 500;
+    line-height: 1.44;
+    text-align: center;
+    color: #828282;
+
+    .tooltip-header {
+
+      mrgin-bottom: 6px;
+
+      border-bottom : 2px solid #d4d4d4;
+
+      .tooltip-value {
+        font-family: Baloo_Regular;
+        font-size: 25px;
+      }
+    }
+
+    .tooltip-footer {
+
+    }
+
+    .green {
+      color:#68e2c2;
+    }
+  }
+}
+
+//Houses list
+#house-list-scroll {
+  .house-list-action {
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+  }
+}
+
+.house-list {
+
+  position: relative;
+  height: 275px;
+  overflow: scroll;
+
+  .house-list-item.active {
+    background-color: #e24660;
+    color: white;
+  }
+
+  .house-list-item.active {
+    img.selected {
+      display: block;
+    }
+
+    img.unselected {
+      display: none;
+    }
+  }
+
+  .house-list-item {
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #f6f6f6;
+    padding: 22px 16px;
+    margin:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: WorkSan_Bold;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: left;
+    color: #828282;
+
+    margin-bottom: 15px;
+
+    img {
+      margin-right: 18px;
+    }
+
+    img.selected {
+      display: none;
+    }
+
+    img.unselected {
+      display: block;
+    }
+  }
+}

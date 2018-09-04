@@ -1,0 +1,36 @@
+<div class="widget">
+    <h1 class="widget-title col-xs-5">
+        <a href="#" data-calendar-previous-month><img src="img/icons/calendar-previous.svg" /></a>
+        <span style="text-transform: uppercase;" data-calendar-current-month></span>
+        <a href="#" data-calendar-next-month><img src="img/icons/calendar-next.svg" /></a>
+    </h1>
+    <div class="row">
+        <div class="col-xs-8">
+            <div id="calendar"></div>
+        </div>
+
+        <div class="col-xs-4">
+            <div id="house-list-scroll">
+                <div id="house-list-scroll-1" class="house-list">
+                    <div data-property-id="1" class="house-list-item active">
+                        <img class="selected" src="img/icons/house-icon.svg"/>
+                        <img class="unselected" src="img/icons/house-icon-unselected.svg"/>
+                        {{property.name}}<br/>
+                        San Francisco, CA
+                    </div>
+
+                    <!--<div data-property-id="2" onclick="updateProperty(this)" class="house-list-item">
+                        <img class="selected" src="img/icons/house-icon.svg"/>
+                        <img class="unselected" src="img/icons/house-icon-unselected.svg"/>
+                        1234 Stewart Rd.<br/>
+                        San Francisco, CA
+                    </div>-->
+                </div>
+
+                <!--<div onclick="$('#house-list-scroll-1').animate({scrollTop: $('#house-list-scroll-1').scrollTop() + 72},'slow')"class="house-list-action">
+                    <img src="img/icons/arrow-down.svg">
+                </div>-->
+            </div>
+        </div>
+    </div>
+</div>

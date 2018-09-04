@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="17px" height="17px" viewBox="0 0 17 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
+    <title>Plus Button</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Tenant-Wizard---Property-Info" transform="translate(-488.000000, -596.000000)">
+            <g id="Property-Information-Page" transform="translate(264.000000, 199.000000)">
+                <g id="Bedroom-Count" transform="translate(69.000000, 370.000000)">
+                    <g id="Plus-Button" transform="translate(155.000000, 27.000000)">
+                        <rect id="Rectangle-3-Copy" fill="#E24660" x="0.987635694" y="0.109834965" width="16" height="16" rx="3"></rect>
+                        <path d="M12.2376357,8.36020996 L9.23763569,8.36020996 L9.23763569,11.360085 C9.23763569,11.498085 9.12563569,11.609835 8.98763569,11.609835 C8.84963569,11.609835 8.73763569,11.498085 8.73763569,11.360085 L8.73763569,8.36020996 L5.73751069,8.36020996 C5.59951069,8.36020996 5.48763569,8.24820996 5.48763569,8.10983496 C5.48763569,7.97183496 5.59963569,7.85983496 5.73751069,7.85983496 L8.73763569,7.85983496 L8.73763569,4.85983496 C8.73763569,4.72183496 8.84963569,4.60983496 8.98763569,4.60983496 C9.12563569,4.60983496 9.23763569,4.72183496 9.23763569,4.85983496 L9.23763569,7.85983496 L12.2376357,7.85983496 C12.3756357,7.85983496 12.4876357,7.97183496 12.4876357,8.10983496 C12.4876357,8.24820996 12.3756357,8.36020996 12.2376357,8.36020996 Z" id="Shape" stroke="#FFFFFF" fill="#FFFFFF" fill-rule="nonzero"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

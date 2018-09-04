@@ -1,0 +1,280 @@
+@font-face {
+  font-family: Baloo_Regular;
+  src: url("../fonts/Baloo/Baloo-Regular.ttf"); }
+@font-face {
+  font-family: WorkSan_Black;
+  src: url("../fonts/Work_Sans/WorkSans-Black.ttf"); }
+@font-face {
+  font-family: WorkSan_Bold;
+  src: url("../fonts/Work_Sans/WorkSans-Bold.ttf"); }
+@font-face {
+  font-family: WorkSan_ExtraBold;
+  src: url("../fonts/Work_Sans/WorkSans-ExtraBold.ttf"); }
+@font-face {
+  font-family: WorkSan_ExtraLight;
+  src: url("../fonts/Work_Sans/WorkSans-ExtraLight.ttf"); }
+@font-face {
+  font-family: WorkSan_Light;
+  src: url("../fonts/Work_Sans/WorkSans-Light.ttf"); }
+@font-face {
+  font-family: WorkSan_Medium;
+  src: url("../fonts/Work_Sans/WorkSans-Medium.ttf"); }
+@font-face {
+  font-family: WorkSan_Regular;
+  src: url("../fonts/Work_Sans/WorkSans-Regular.ttf"); }
+@font-face {
+  font-family: WorkSan_SemiBold;
+  src: url("../fonts/Work_Sans/WorkSans-SemiBold.ttf"); }
+@font-face {
+  font-family: WorkSan_Thin;
+  src: url("../fonts/Work_Sans/WorkSans-Thin.ttf"); }
+.medium {
+  font-family: WorkSan_Medium; }
+
+.doFadeIn {
+  -webkit-animation: fadeInSlide forwards ease-in 350ms;
+  animation: fadeInSlide forwards ease-in 350ms; }
+
+.doFadeOut {
+  -webkit-animation: fadeOutSlideDown forwards ease-out 350ms;
+  animation: fadeOutSlideDown forwards ease-out 350ms; }
+
+@keyframes fadeInSlide {
+  0% {
+    opactity: 0;
+    transform: translateX(-100px); }
+  100% {
+    opactity: 1;
+    transform: translateX(0); } }
+body, html {
+  height: 100%; }
+
+.splash {
+  color: #ffffff;
+  height: 100%;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../../img/splash-screen-xs.png"); }
+  .splash .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column; }
+  .splash .logo {
+    position: absolute; }
+  .splash .splash-container {
+    padding-top: 70px;
+    flex: 1 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center; }
+    .splash .splash-container .splash-title {
+      font-size: 30px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.0;
+      letter-spacing: normal;
+      text-align: center;
+      color: #ffffff;
+      margin-top: 0; }
+    .splash .splash-container .splash-subtitle,
+    .splash .splash-container .splash-message {
+      font-family: WorkSan_Regular;
+      color: #ffffff; }
+    .splash .splash-container form input {
+      opacity: 0.9;
+      border-radius: 100px;
+      background-color: #ffffff; }
+    .splash .splash-container form .form-control {
+      font-family: WorkSan_Regular;
+      color: #585858;
+      display: block; }
+    .splash .splash-container form button,
+    .splash .splash-container form button:focus,
+    .splash .splash-container form button:hover {
+      font-family: Baloo_Regular;
+      opacity: 0.9;
+      border-radius: 100px;
+      background-color: #f42b52;
+      border: 0;
+      color: white;
+      text-shadow: none;
+      background-image: none; }
+  .splash .splash-footer-container {
+    flex: 0 1 auto;
+    padding-bottom: 45px; }
+    .splash .splash-footer-container .footer .footer-logo {
+      width: 96px;
+      margin-bottom: 10px; }
+    .splash .splash-footer-container .footer p {
+      margin: 0;
+      font-family: WorkSan_Regular;
+      font-size: 12px;
+      line-height: 1.67;
+      text-align: center;
+      color: #ffffff; }
+
+@media (min-width: 120px) {
+  .splash {
+    background-image: url("../../img/splash-screen-xs.png"); }
+    .splash .logo {
+      display: none; }
+    .splash .splash-container .splash-title {
+      font-family: Baloo_Regular;
+      margin-bottom: 6px; }
+    .splash .splash-container .splash-subtitle,
+    .splash .splash-container .splash-message {
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 1.13;
+      margin-bottom: 23px;
+      width: 60%;
+      margin-left: auto;
+      margin-right: auto; }
+    .splash .splash-container form .form-control {
+      width: 100%;
+      height: 30px;
+      padding: 5px 20px;
+      font-size: 11px;
+      line-height: 1.82; }
+    .splash .splash-container form button {
+      padding: 8px 25px;
+      font-size: 13px;
+      line-height: 13px; } }
+@media (min-width: 640px) {
+  .splash {
+    background-image: url("../../img/splash-screen-sm.png"); }
+    .splash .logo {
+      left: 95px;
+      top: 70px;
+      display: block; }
+    .splash .splash-container {
+      padding-top: 130px; }
+      .splash .splash-container .splash-title {
+        font-family: Baloo_Regular;
+        font-size: 70px;
+        margin-bottom: 16px; }
+      .splash .splash-container .splash-subtitle,
+      .splash .splash-container .splash-message {
+        font-size: 25px;
+        font-weight: 500;
+        line-height: 1.16; }
+      .splash .splash-container .splash-message {
+        width: 100%;
+        height: 100px;
+        margin-bottom: 16px; }
+      .splash .splash-container form .form-control {
+        margin-right: 16px;
+        width: 380px;
+        height: 40px;
+        display: block;
+        padding: 9px 25px;
+        font-size: 13px;
+        line-height: 1.54;
+        margin: 0 auto; }
+      .splash .splash-container form button {
+        padding: 13px 35px;
+        line-height: 1;
+        font-size: 14px; } }
+@media (min-width: 767px) {
+  .splash {
+    background-image: url("../../img/splash-screen-md.png"); }
+    .splash .logo {
+      left: 86px;
+      top: 70px;
+      display: block; }
+    .splash .splash-container {
+      padding-top: 130px; }
+      .splash .splash-container .splash-title {
+        font-family: Baloo_Regular;
+        font-size: 70px;
+        margin-bottom: 16px; }
+      .splash .splash-container .splash-subtitle,
+      .splash .splash-container .splash-message {
+        font-size: 25px;
+        font-weight: 500;
+        line-height: 1.16; }
+      .splash .splash-container .splash-message {
+        width: 100%;
+        height: 100px;
+        margin-bottom: 16px; }
+      .splash .splash-container form .form-control {
+        margin-right: 16px;
+        width: 380px;
+        height: 40px;
+        padding: 9px 25px;
+        font-size: 13px;
+        line-height: 1.54; }
+      .splash .splash-container form button {
+        padding: 13px 35px;
+        line-height: 1;
+        font-size: 14px; } }
+@media (min-width: 1024px) {
+  .splash {
+    background-image: url("../../img/splash-screen-lg.png"); }
+    .splash .logo {
+      left: 86px;
+      top: 70px;
+      display: block; }
+    .splash .splash-container {
+      padding-top: 130px; }
+      .splash .splash-container .splash-title {
+        font-family: Baloo_Regular;
+        font-size: 70px;
+        margin-bottom: 16px; }
+      .splash .splash-container .splash-subtitle,
+      .splash .splash-container .splash-message {
+        font-size: 25px;
+        font-weight: 500;
+        line-height: 1.16; }
+      .splash .splash-container .splash-message {
+        width: 100%;
+        height: 100px;
+        margin-bottom: 16px; }
+      .splash .splash-container form .form-control {
+        margin-right: 16px;
+        width: 380px;
+        height: 40px;
+        padding: 9px 25px;
+        font-size: 13px;
+        line-height: 1.54; }
+      .splash .splash-container form button {
+        padding: 13px 35px;
+        line-height: 1;
+        font-size: 14px; } }
+@media (min-width: 1280px) {
+  .splash {
+    background-image: url("../../img/splash-screen-llg.png"); }
+    .splash .logo {
+      left: 86px;
+      top: 70px;
+      display: block; }
+    .splash .splash-container {
+      padding-top: 130px; }
+      .splash .splash-container .splash-title {
+        font-size: 70px;
+        margin-bottom: 16px; }
+      .splash .splash-container .splash-subtitle,
+      .splash .splash-container .splash-message {
+        font-size: 25px;
+        font-weight: 500;
+        line-height: 1.16; }
+      .splash .splash-container .splash-message {
+        width: 100%;
+        height: 100px;
+        margin-bottom: 16px; }
+      .splash .splash-container form .form-control {
+        margin-right: 16px;
+        width: 380px;
+        height: 40px;
+        padding: 9px 25px;
+        font-size: 13px;
+        line-height: 1.54; }
+      .splash .splash-container form button {
+        padding: 13px 35px;
+        line-height: 1;
+        font-size: 14px; } }
+
+/*# sourceMappingURL=splash.css.map */

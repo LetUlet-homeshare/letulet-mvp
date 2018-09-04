@@ -1,0 +1,36 @@
+.carousel-letulet {
+
+  .carousel-control {
+    background-image: none;
+
+
+    .icon-prev,
+    .glyphicon-chevron-left {
+      left: 0;
+      margin-left: -10px;
+      top: 20%;
+    }
+
+    .icon-next,
+    .glyphicon-chevron-right {
+      right: 0;
+      margin-left: -10px;
+      top: 20%;
+    }
+
+    .glyphicon-chevron-left:before,
+    .glyphicon-chevron-right:before {
+      color: #e24660;
+    }
+  }
+}
+
+.carousel-current-guest {
+
+  .carousel-control {
+    background-image: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
